@@ -1,26 +1,26 @@
 class Syq < Formula
   desc "Parallel copy with an rsync-shaped interface"
   homepage "https://github.com/greaber/syq"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/greaber/syq/releases/download/v0.3.2/syq-macos-arm64", using: :nounzip
-      sha256 "2533ac1e728fe22fb98d429addbbb75eab5294c8dc9fe141e320cd30ccf04962"
+      url "https://github.com/greaber/syq/releases/download/v0.4.0/syq-macos-arm64", using: :nounzip
+      sha256 "8c7479a45280a4a2d80b59fd9cabcb25cdfa48850acb879b7ad64d49c3933d0c"
     else
-      url "https://github.com/greaber/syq/releases/download/v0.3.2/syq-macos-x86_64", using: :nounzip
-      sha256 "b3aaa720a0a97fdaddd61439e0b77afbcf29f3f4662324880ff1d4a86e3d69ef"
+      url "https://github.com/greaber/syq/releases/download/v0.4.0/syq-macos-x86_64", using: :nounzip
+      sha256 "f0733e29986f4cca302fdc5c1098f3b64440baf33402c5a45acfcbbc11202fff"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/greaber/syq/releases/download/v0.3.2/syq-linux-aarch64", using: :nounzip
-      sha256 "0e8df569683cd36d2c7e05184fcca5165eff91834599eba81e183af059a5ef4a"
+      url "https://github.com/greaber/syq/releases/download/v0.4.0/syq-linux-aarch64", using: :nounzip
+      sha256 "ff6af9235c59e52978718801b27638de9253a831744f7dd60c753d5487c9f94b"
     else
-      url "https://github.com/greaber/syq/releases/download/v0.3.2/syq-linux-x86_64", using: :nounzip
-      sha256 "406e36b0e2cd69b68af6230bf7ef9726b309cdff62160e46b6818b02efdc4042"
+      url "https://github.com/greaber/syq/releases/download/v0.4.0/syq-linux-x86_64", using: :nounzip
+      sha256 "47b532c60423b047fd858de448f54067edd4e72019582d40dffa43c5cc73c9fc"
     end
   end
 
