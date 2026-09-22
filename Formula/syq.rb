@@ -1,26 +1,26 @@
 class Syq < Formula
   desc "Parallel copy with an rsync-shaped interface"
   homepage "https://github.com/greaber/syq"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://dl.syq.christmas/v0.7.0/syq-macos-arm64", using: :nounzip
-      sha256 "89ff98d3d23b3a219be79342eca29bdc910587b5e73bdf44b3ad2c4470a150e9"
+      url "https://dl.syq.christmas/v0.7.1/syq-macos-arm64", using: :nounzip
+      sha256 "1b3619bc8ba79fed4de465f7411e97c3e4133807a39845d763d122c51eefe9e7"
     else
-      url "https://dl.syq.christmas/v0.7.0/syq-macos-x86_64", using: :nounzip
-      sha256 "8b4051f5582bead2e1141f9d06076ae1d48a515d113350253a14a16253c1d2ea"
+      url "https://dl.syq.christmas/v0.7.1/syq-macos-x86_64", using: :nounzip
+      sha256 "03fd8827122b5956d6bf00d47efb99df630925d3521f42cf9a525ea0c0465392"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://dl.syq.christmas/v0.7.0/syq-linux-aarch64", using: :nounzip
-      sha256 "a629a28aa68623c242ca7b87bc185d933c5bd2f953e22c4172b3469f27032116"
+      url "https://dl.syq.christmas/v0.7.1/syq-linux-aarch64", using: :nounzip
+      sha256 "16fc2b1a194902e30ebf8ef3923ee9506dd95846ededf502dd4112c3327152ae"
     else
-      url "https://dl.syq.christmas/v0.7.0/syq-linux-x86_64", using: :nounzip
-      sha256 "5d4f6a18eb8a5cf61f7067480515485b462379a16a2872dac935fb48b59fa556"
+      url "https://dl.syq.christmas/v0.7.1/syq-linux-x86_64", using: :nounzip
+      sha256 "879cb7b24e321568f3de691c8af90f9648cac44c30d24dc2d1b33c40a509bbf6"
     end
   end
 
